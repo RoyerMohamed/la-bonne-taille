@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Sanchez&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css     "
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <!-- icon title  -->
+<link rel="shortcut icon" href="../assets/images/Taille personnalisée – 1.png" type="image/x-icon">
+
+    <title>La Bonne Paire</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark p-3">
+      <a class="navbar-brand" href="./home.html"
+        ><img
+          src="../assets/images/Taille personnalisée – 1.png"
+          alt="logo"
+          class="logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto nav_links texr-center">
+          <li class="nav-item active text-center">
+            <a href="./home.html">Accueil</a>
+          </li>
+          <li class="nav-item text-center">
+            <a href="./ajouter-une-offre.html">Ajoutez une offre</a>
+          </li>
+          <li class="nav-item text-center">
+            <a href="./qui-somme-nous.html"> Qui sommes nous </a>
+          </li>
+        </ul>
+      </div>
+      <div class="social hide">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fas fa-user"></i>
+      </div>
+    </nav>
+
+    <section id="qui-sommes-nous">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="section-title">Ajouter une offre</h1>
+          </div>
+        </div>
+        <div class="row form_container">
+          <div class="col form-wrapper">
+            <form action="" runat="server">
+              <div class="row">
+                <div class="col text-center preview-image">
+                  <input type="file" id="imgInp" hidden />
+                  <img id="blah" src="#" alt="" style="width: 30%" />
+                  <label for="imgInp"><i class="fas fa-plus"></i></label>
+                </div>
+              </div>
+              <div class="row p-5">
+                <input class="text-center" type="text" placeholder="Titre" />
+                <select name="taille" id="">
+                  <option value="">taille</option>
+                  <option value="39">39</option>
+                  <option value="41">41</option>
+                  <option value="42">42</option>
+                  <option value="43">43</option>
+                  <option value="44">44</option>
+                  <option value="45">45</option>
+                  <option value="46">46</option>
+                  <option value="47">47</option>
+                </select>
+                <select name="Marque" id="">
+                  <option value="">Marque</option>
+                  <option value="">nike</option>
+                  <option value="">Adidas</option>
+                  <option value="">gucci</option>
+                  <option value="">rebook</option>
+                </select>
+
+                <select name="Prix" id="">
+                  <option value="">Prix</option>
+                  <option value="">-100€</option>
+                  <option value="">100€ - 200€</option>
+                  <option value="">+200€</option>
+                </select>
+
+                <select name="Année" id="">
+                  <option value="">Année</option>
+                  <option value="">-2000</option>
+                  <option value="">2000 - 2010</option>
+                  <option value="">2010-2021</option>
+                </select>
+
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 m-auto">
+            <textarea
+              class="description"
+              name="description"
+              i
+              cols="30"
+              rows="10"
+              placeholder="Description"
+              class="m-auto text-center text-descrition"
+            ></textarea>
+            <div class="btn-container">
+              <button class="btn red-btn m-3 text-center">
+                Postez cette offre
+              </button>
+              <button class="btn red-btn m-3 text-center">
+                Annuler
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <footer>
+        <div class="container">
+          <div class="row text-center footer_contente">
+            <div class="col-md-4 d-flex align-self-center">
+              <img
+                style="width: 60px"
+                src="../assets/images/Taille personnalisée – 1.png"
+                alt="logo"
+              />
+            </div>
+            <div class="col-md-4 d-flex align-self-center">
+              <p>&#169; 2020 copyright all rigth reserved</p>
+            </div>
+            <div class="col-md-4 d-flex align-self-center">
+              <a href="#">Mentions légales/politique de confidensialités</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <!-- <form runat="server">
+      <input type="file" id="imgInp" />
+      <img id="blah" src="#" alt="your image" />
+    </form> -->
+  </body>
+</html>
